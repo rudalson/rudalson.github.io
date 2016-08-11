@@ -1,8 +1,8 @@
 # 한글 설치
-sudo apt purge ibus
-sudo apt install fcitx-hangul
-sudo apt install fcitx
-sudo apt install language-selector-gnome
+* sudo apt purge ibus
+* sudo apt install fcitx-hangul
+* sudo apt install fcitx
+* sudo apt install language-selector-gnome
 
 language-selector-gnome 가셔서, 입력기를 fcitx 로 변경
 
