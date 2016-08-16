@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>없다캐라의 끄적끄적</title>
-    <description>없다캐라 Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Aug 2016 15:27:05 +0900</pubDate>
-    <lastBuildDate>Tue, 16 Aug 2016 15:27:05 +0900</lastBuildDate>
+    <title>Sciblog</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Aug 2016 18:45:27 +0900</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2016 18:45:27 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -65,8 +64,8 @@ Singly-List를 구현하는 코드를 보여준다.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 16 Aug 2016 14:34:28 +0900</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2016/08/16/Torvalds-better-code.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2016/08/16/Torvalds-better-code.html</guid>
+        <link>/jekyll/update/2016/08/16/Torvalds-better-code.html</link>
+        <guid isPermaLink="true">/jekyll/update/2016/08/16/Torvalds-better-code.html</guid>
         
         
         <category>jekyll</category>
@@ -137,8 +136,8 @@ Singly-List를 구현하는 코드를 보여준다.&lt;/p&gt;
 &lt;p&gt;정 헷갈리면 나이브하게 다 풀어서 해야 한다.&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 May 2015 16:17:28 +0900</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/05/27/Short-Circuit-Evaluation.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/05/27/Short-Circuit-Evaluation.html</guid>
+        <link>/jekyll/update/2015/05/27/Short-Circuit-Evaluation.html</link>
+        <guid isPermaLink="true">/jekyll/update/2015/05/27/Short-Circuit-Evaluation.html</guid>
         
         
         <category>jekyll</category>
