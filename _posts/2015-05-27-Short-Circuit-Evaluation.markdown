@@ -2,7 +2,8 @@
 layout: post
 title:  "Short-Circuit Evaluation에 대해서"
 date:   2015-05-27 16:17:28 +0900
-categories: jekyll update
+categories: development
+tags: code general sce
 ---
 Short-Circuit Evaluation 은 `&&`이나 `||` 에서 첫번째 argument 에서 조건의 결과값에서 이미 전체 결과값이 판단되었을 경우 첫번째로만 수행하는 것을 말한다.
 

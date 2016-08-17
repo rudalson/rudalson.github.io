@@ -2,7 +2,8 @@
 layout: post
 title:  "토발즈의 더 좋은 코드"
 date:   2016-08-16 14:34:28 +0900
-categories: jekyll update
+categories: development
+tags: code torvalds
 ---
 TED의 [리누스 토발즈의 기본 철학][Torvalds-TED]편에서 보면
 
@@ -16,7 +17,7 @@ Singly-List를 구현하는 코드를 보여준다.
 
 꾸준히 적용해보려 노력해보는 수 밖에 없겠다.
 
-일반적인 코드
+### 일반적인 코드
 {% highlight c %}
 remove_list_entry(entry)
 {
@@ -39,7 +40,7 @@ remove_list_entry(entry)
 {% endhighlight %}
 
 
-더 나은 코드
+### 더 나은 코드
 {% highlight c %}
 remove_list_entry(entry)
 {
