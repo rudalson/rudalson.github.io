@@ -1,49 +1,55 @@
-# [Air Raya Group](http://webdesign.airrayagroup.com/)
+# jekyll-theme-EasyBook
 
-[Sci blog](http://sciblog.yourfreebies.org/) is jekyll theme created by [Air Raya Group](http://webdesign.airrayagroup.com/).
+Another Jekyll Blog Theme "EasyBook"
 
-[demo](http://sciblog.yourfreebies.org/) 
+Start blogging with a simple but powerful theme.
 
-Unless otherwise noted, this theme is released under MIT licence. 
+## Features
 
-## Credits
-Thank you so much for providing free resources and inspirations
-* [getbootstrap](http://getbootstrap.com/)
-* [jekyll](https://jekyllrb.com/)
-* [startboostrap](http://startbootstrap.com/)
-* [noisetexturegenerator](http://www.noisetexturegenerator.com/)
-* [yellow blue by Christos Alatzas](http://demo-yb.yellowblue.eu/)
+- Everything Basic Jekyll has.
+- **Pagination** is enabled.
+- **Comments** using Disqus or 多说.
+- **TOC** makes reading easier.
+- **Profile** including your links and avatar on the sidebar.
+- *And more...*
 
-## Getting Started
+## Install
 
-To use this template, download it [here] (https://github.com/airrayagroupwebdesign/sciblog/archive/master.zip). Contact our team for customization and support. Rates may apply.
-To install *jekyll* and *this theme*
+Read [Quick Guide] to learn how to install and publish.
 
-1. type on search `cmd.exe` or command prompt
-2. In `C:\Users\my pc\desktop\blog>`
-3. Install ruby by going to `http://rubyinstaller.org/downloads/` to download
-4. When installing ruby, make sure to check `add ruby executables to your PATH`
-5. Install jekyll `C:\Users\my pc\desktop\blog\gem install jekyll`
-6. Create jekyll theme  `C:\Users\my pc\desktop\blog\jekyll new my-awesome-site`
-7. Go to blog my-awesome-site `C:\Users\my pc\desktop\blog>cd my-awesome-site`
-8. Preview your blog `C:\Users\my pc\desktop\blog\my-awesome-site>jekyll serve`
-9. Now browse to `http://localhost:4000`
-10. Alternatively, you can download my jekyll theme here `https://github.com/airrayagroupwebdesign/sciblog`
-11. click download zip and unzip it.
-12. You can copy and paste everything inside to blog folder in desktop such as `C:\Users\my pc\desktop\blog>`
-13. Install jekyll-paginate  `C:\Users\my pc\desktop\blog>gem install jekyll-paginate`
-14. Preview the blog and make changes `C:\Users\my pc\desktop\blog>jekyll serve`
-15. Now browse to `http://localhost:4000`
+Read [Welcome to Jekyll and EasyBook][helloPost] and [Jekyll][jekyll] for further information.
 
-## Bugs and Issues
+**If need help, please:**
 
-Have a bug or an issue with this template? Please contact our team airrayagroup@gmail.com or fork and contribute.
+ - [**Read Wiki pages**](https://github.com/laobubu/jekyll-theme-EasyBook/wiki)
+ - **Google it**
+ - [**Submit an issue**](https://github.com/laobubu/jekyll-theme-EasyBook/issues/new)
 
-## Creator
+## Donate
 
-Sci blog theme was created by and is maintained by **Air raya Group Web Design team**, at [Air Raya Group Web Design](http://webdesign.airrayagroup.com/).
+Buy me a coffee if you find EasyBook useful for you :smiley:
 
+Visit <http://laobubu.net/donate.html>
 
-## Copyright and License
+## Demo
 
-Copyright 2015 AIR RAYA GROUP. The work is licenced under MIT[](https://github.com/airrayagroupwebdesign/sciblog/blob/master/LICENSE) license.
+[laobubu's blog](http://blog.laobubu.net) | [empty site](http://laobubu.github.io/jekyll-theme-EasyBook)
+
+![Homepage](https://ooo.0o0.ooo/2016/02/11/56bc997c65daf.png)
+
+## License
+
+```
+The MIT License (MIT)
+Copyright (c) 2016 laobubu
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+
+[Quick Guide]: https://github.com/laobubu/jekyll-theme-EasyBook/wiki/Quick-Guide
+[helloPost]: http://laobubu.github.io/jekyll-theme-EasyBook/archivers/hello
+[jekyll]: http://jekyllrb.com/
