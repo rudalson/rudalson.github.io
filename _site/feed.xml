@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>없다캐라의 끄적끄적</title>
-    <description>One or more sentences introducing this blog.
-</description>
-    <link>http://rudalson.github.io/jekyll-theme-EasyBook/</link>
-    <atom:link href="http://rudalson.github.io/jekyll-theme-EasyBook/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 17 Aug 2016 13:04:10 +0900</pubDate>
-    <lastBuildDate>Wed, 17 Aug 2016 13:04:10 +0900</lastBuildDate>
+    <title>HyG</title>
+    <description>浩阳的博客 前端爱好者</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 17 Aug 2016 13:31:18 +0900</pubDate>
+    <lastBuildDate>Wed, 17 Aug 2016 13:31:18 +0900</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -65,8 +64,8 @@ Singly-List를 구현하는 코드를 보여준다.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 16 Aug 2016 14:34:28 +0900</pubDate>
-        <link>http://rudalson.github.io/jekyll-theme-EasyBook/archivers/Torvalds-better-code</link>
-        <guid isPermaLink="true">http://rudalson.github.io/jekyll-theme-EasyBook/archivers/Torvalds-better-code</guid>
+        <link>/2016/08/16/Torvalds-better-code/</link>
+        <guid isPermaLink="true">/2016/08/16/Torvalds-better-code/</guid>
         
         
         <category>jekyll</category>
@@ -137,8 +136,8 @@ Singly-List를 구현하는 코드를 보여준다.&lt;/p&gt;
 &lt;p&gt;정 헷갈리면 나이브하게 다 풀어서 해야 한다.&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 May 2015 16:17:28 +0900</pubDate>
-        <link>http://rudalson.github.io/jekyll-theme-EasyBook/archivers/Short-Circuit-Evaluation</link>
-        <guid isPermaLink="true">http://rudalson.github.io/jekyll-theme-EasyBook/archivers/Short-Circuit-Evaluation</guid>
+        <link>/2015/05/27/Short-Circuit-Evaluation/</link>
+        <guid isPermaLink="true">/2015/05/27/Short-Circuit-Evaluation/</guid>
         
         
         <category>jekyll</category>
