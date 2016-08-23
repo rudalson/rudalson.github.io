@@ -17,5 +17,8 @@ language-selector-gnome 가서, 입력기를 fcitx 로 변경
 
 
 # google chrome 설치
-$ sudo apt install chromium-browser
+웹에서 다운받아서 설치하지 말고 웬만하면 아래의 방식으로 설치할 것을 권장
 
+{% highlight bash %}
+$ sudo apt install chromium-browser
+{% endhighlight %}

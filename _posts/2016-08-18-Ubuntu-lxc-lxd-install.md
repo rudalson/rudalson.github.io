@@ -6,13 +6,23 @@ categories: system
 tags: ubuntu lxc lxd
 ---
 
+@s_jeho 사마에게 lxc, lxd를 배웠다.
+docker와는 조금 다르지만 정말 매력있다.
+
+lxc만 존재했었을 때는 사용하기 많이 까다로웠는데 lxd가 릴리즈 되고 나서부터는 사용하기 굉장히 편해졌다고 한다. l
+
 # lxd 설치
+{% highlight bash %}
 $ sudo apt install lxd
+{% endhighlight %}
+xc를 별도로 설치할 필요 없이 lxd만 설치하면 끝~~~
+
+# lxd 시작
 $ sudo lxd init
 
 {% highlight bash %}
 dev@vm-ubuntux64:~$ sudo lxd init
-Name of the storage backend to use (dir or zfs): 
+Name of the storage backend to use (dir or zfs):
 Invalid input, try again.
 
 Name of the storage backend to use (dir or zfs): dir
@@ -22,8 +32,8 @@ Invalid input, try again.
 
 Address to bind LXD to (not including port): 0.0.0.0
 Port to bind LXD to (8443 recommended): 8443
-Trust password for new clients: 
-Again: 
+Trust password for new clients:
+Again:
 Do you want to configure the LXD bridge (yes/no)? yes
 Warning: Stopping lxd.service, but it can still be activated by:
   lxd.socket
@@ -109,18 +119,18 @@ Adding new group `rudalson' (1000) ...
 Adding new user `rudalson' (1000) with group `rudalson' ...
 Creating home directory `/home/rudalson' ...
 Copying files from `/etc/skel' ...
-Enter new UNIX password: 
-Retype new UNIX password: 
+Enter new UNIX password:
+Retype new UNIX password:
 passwd: password updated successfully
 Changing the user information for rudalson
 Enter the new value, or press ENTER for the default
-	Full Name []: 
-	Room Number []: 
-	Work Phone []: 
-	Home Phone []: 
-	Other []: 
+	Full Name []:
+	Room Number []:
+	Work Phone []:
+	Home Phone []:
+	Other []:
 Is the information correct? [Y/n] y
-root@test-con1:~# 
+root@test-con1:~#
 root@test-con1:~# sudo usermod -G sudo -a rudalson
 root@test-con1:~# exit
 {% endhighlight %}
@@ -150,7 +160,7 @@ The authenticity of host '10.243.148.229 (10.243.148.229)' can't be established.
 ECDSA key fingerprint is SHA256:UH+8d5Fsqb1lV6PZAxN8Kw7eLYLGI4QXvYRax013OKg.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '10.243.148.229' (ECDSA) to the list of known hosts.
-rudalson@10.243.148.229's password: 
+rudalson@10.243.148.229's password:
 Welcome to Ubuntu 15.10 (GNU/Linux 4.4.0-21-generic i686)
 
  * Documentation:  https://help.ubuntu.com/

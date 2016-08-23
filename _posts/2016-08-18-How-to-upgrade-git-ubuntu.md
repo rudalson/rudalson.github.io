@@ -5,20 +5,21 @@ date:   2016-08-18 17:16:28 +0900
 categories: tool
 tags: git ubuntu xerial
 ---
-문득 현재 사용하고 있는 Ubuntu내의 git을 update 하는 방법이 뭘까가 궁금해졌다.
-우분투 업데이트 사항들을 비교적 자주 update해주긴 하지만 이런것은 변화가 없기 때문이다.
+문득 현재 사용하고 있는 Ubuntu내의 git을 update 하는 방법이 궁금해졌다.
+우분투 업데이트 사항들을 비교적 자주 update 해주긴 하지만 이런 것은 변화가 없기 때문이다.
 
-Upgrading Ubuntu to Use the Latest Git Version
-http://lifeonubuntu.com/upgrading-ubuntu-to-use-the-latest-git-version/
-
-How can I update to a newer version of Git using apt-get?
-http://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get
+* [Upgrading Ubuntu to Use the Latest Git Version](http://lifeonubuntu.com/upgrading-ubuntu-to-use-the-latest-git-version/)
+* [How can I update to a newer version of Git using apt-get?](http://unix.stackexchange.com/questions/33617/how-can-i-update-to-a-newer-version-of-git-using-apt-get)
 
 의 글에서 해답을 찾았고 현재 Ubuntu 16.04 에서도 잘 동작하는 것을 확인하였다.
 
 {% highlight bash %}
 $ git --version
 git version 2.7.4
+{% endhighlight %}
+먼저 현재의 git 버전을 확인해 보았다. 버전이 많이 낮은 것은 아니지만....
+
+{% highlight bash %}
 $ sudo add-apt-repository ppa:git-core/ppa
  The most current stable version of Git for Ubuntu.
 
@@ -34,7 +35,6 @@ gpg: key E1DF1F24: public key "Launchpad PPA for Ubuntu Git Maintainers" importe
 gpg: Total number processed: 1
 gpg:               imported: 1  (RSA: 1)
 OK
-
 $ sudo apt update
 Hit:1 http://kr.archive.ubuntu.com/ubuntu xenial InRelease
 Get:2 http://kr.archive.ubuntu.com/ubuntu xenial-updates InRelease [95.7 kB]                             
@@ -55,7 +55,10 @@ Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 4 packages can be upgraded. Run 'apt list --upgradable' to see them.
+{% endhighlight %}
+새 버전을 위해서 git을 위한 새로운 repository를 갱신한 다음 update를 해준다.
 
+{% highlight bash %}
 $ sudo apt install git
 Reading package lists... Done
 Building dependency tree       
@@ -94,7 +97,10 @@ Processing triggers for man-db (2.7.5-1) ...
 Setting up git-man (1:2.9.3-0ppa1~ubuntu16.04.1) ...
 Setting up git (1:2.9.3-0ppa1~ubuntu16.04.1) ...
 Setting up gitk (1:2.9.3-0ppa1~ubuntu16.04.1) ...
+{% endhighlight %}
 
+{% highlight bash %}
 $ git --version
 git version 2.9.3
 {% endhighlight %}
+이제 버전을 확인해 보면 잘 되는 것을 알 수 있다.
