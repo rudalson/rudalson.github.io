@@ -31,6 +31,7 @@ IO_ERROR_LOG_PACKET 구조체 값 뒷부분에 필요한 argument들을 연속�
 이 구조체 값에는 몇몇 주요한 변수들이 있는데 이는 MSDN 문서를 참고한다.
 
 과정은 단순하며 2가지 정도 주의할 점이 있다.
+
 * 인자로 사용될 메모리 사이즈
 * 2byte 문자열을 다룰 경우 IRQL 제한
 
@@ -38,6 +39,7 @@ IO_ERROR_LOG_PACKET 구조체 값 뒷부분에 필요한 argument들을 연속�
 IO_ERROR_LOG_PACKET 의 instance의 메모리 사이즈는 패킷 헤더 포함 size가 ERROR_LOG_MAXIMUM_SIZE를 넘지 못하며 헤더 패킷 size 48을 빼주면 52글자 정도 밖에는 쓸수 없다.
 IoWriteErrorLogEntry passes at most 52 characters?
 따라서 mc 파일로 작성된 것 외에 argument로는 52 character 그러니까 대략 104byte 정도 더 추가할 수 있다.
+
 2byte 유니코드 사용으로 인한 IRQL 제한
 1byte 문자열을 2byte 문자열로 변환할 때 라이브러리에서 제공해주는 일반적인 함수들은 유니코드 변환에 따른 테이블을 참조한다. 이것으로 인해 IRQL 문제가 발생한다.
 참고로 변환에 사용해봤던 함수들은 RtlStringCbLength(), swprintf_s() 이며 모두 문제를 일으켰다. (DW-23)

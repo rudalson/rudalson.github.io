@@ -22,3 +22,8 @@ language-selector-gnome 가서, 입력기를 fcitx 로 변경
 {% highlight bash %}
 $ sudo apt install chromium-browser
 {% endhighlight %}
+
+# Package Manager 버그 패치
+보통은 apt 로 패치가 끝나지만 이 버그는 이런 패키지 매니저 자체의 버그 수정 패치이다. 따라서 별도로 설치해줘야 한다.
+
+[libappstream3 0.9.4-1ubuntu1 (amd64 binary) in ubuntu xenial](https://launchpad.net/ubuntu/xenial/amd64/libappstream3/0.9.4-1ubuntu1)
