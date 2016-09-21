@@ -55,9 +55,9 @@ Write를 분석하는 이유는 최근 스토리지의 80%는 write traffic이�
 
 Write 한번에 Ceph 자체의 메타, 저널링, 그리고 Block 안쪽의 파일시스템 자체 메타, 저널링 이렇게 총 4군데의 추가적인 write가 덧붙던데 그렇게 많이 덕지덕지 붙을지는 몰랐다.
 Write 한번에 붙는 량을 WAF(Write Amplication Factor)라는 단위로 측정. fio 사용
-블럭단위라서 WAF만 가지고는 정확히 어느요소인지 파악하기 힘든데 약간의 팁을 알려줌.
+블럭단위라서 WAF만 가지고는 정확히 어느 요소인지 파악하기 힘든데 약간의 팁을 알려줌.
 
-그리고 Write도 1st, 2nd, Overwrite 별로 측정... 이런것도 있구나 싶었음.
+가령 Write도 1st, 2nd, Overwrite 별로 측정...하고 캐시 영향이 간섭하지 않도록 한번 쓰면 flush해서 기다리고 뭐 이런식으로....
 
 RBD는 4MiB 단위의 청크로 오브젝을 할당
 
