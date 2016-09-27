@@ -4,9 +4,6 @@ title:  "InterlockedXXXXX() 함수의 인자는 왜 volatile 일까?"
 categories: development
 tags: Interlocked c c++ volatile
 ---
-결론부터 이야기 하면 아직 모르겠다.
-
-먼저 volatile 부터 상기해야 했었다. 실제로 고민해야 할 필요가 없었고 보긴 봤지만 정확히 왜 필요한건지? 어디다 사용하는건지? 등등은 잘 이해가 안갔다.
 
 ## volatile 이란?
 우선 하스켈 전도사가 되신 서광열님의 [C/C++ volatile 키워드](http://skyul.tistory.com/337)을 보면 volatile에는 크게 2가지 기능이 있다.
