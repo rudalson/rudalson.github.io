@@ -18,6 +18,9 @@ markdown: kramdown
 
 google_analytics: UA-86564034-1
 
+gems:
+  - jekyll-sitemap
+
 # highlight
 # 本地用rouge, github上用pygments
 # highlighter: pygments
