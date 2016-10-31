@@ -16,6 +16,8 @@ permalink: /:year/:month/:day/:title/
 # Build settings
 markdown: kramdown
 
+google_analytics: UA-86564034-1
+
 # highlight
 # 本地用rouge, github上用pygments
 # highlighter: pygments
