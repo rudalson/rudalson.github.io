@@ -10,13 +10,14 @@ tags: php laravel sentinel
 Sentinel By Cartalyst 검색
 
 ## Install by Composer
-{% highlight bash %}
+```bash
 composer require cartalyst/sentinel "2.0.*"
-{% endhighlight %}
+```
 
 ## Integration
 config/app.php
 $providers
+
 {% highlight php %}
 Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
