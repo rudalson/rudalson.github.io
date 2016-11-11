@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Laravel 5.3에서 Sentinel 활용"
+title:  "Laravel 5.3에서 Sentinel 활용 #1"
 categories: PHP
 tags: php laravel sentinel
 ---
@@ -54,13 +54,19 @@ Schema::create('users', function (Blueprint $table) {
 ...
 {% endhighlight %}
 
+{% highlight bash %}
 php artisan migrate:refresh
+{% endhighlight %}
 
 ## Controller
+{% highlight bash %}
 php artisan make:controller RegistrationController
+{% endhighlight %}
 
 routes/web.php 에서
-Route::get('/register', 'RegistrationController@register'); 추가
+{% highlight php %}
+Route::get('/register', 'RegistrationController@register'); // 추가
+{% endhighlight %}
 
 App/Http/Controllers/RegisterationController.php
 {% highlight php %}
@@ -71,6 +77,7 @@ public function register()
 {% endhighlight %}
 
 ## View
+2번째 link FontAwesome 사용하고 나면 아이콘 사용 가능
 {% highlight php %}
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -130,7 +137,7 @@ public function register()
                         </div>
 
                         <div class="form-group">
-                            <input type="submit" name="Register" class="btn btn-success pull-right">
+                            <input type="submit" value="Register" class="btn btn-success pull-right">
                         </div>
                     </form>
                 </div>
