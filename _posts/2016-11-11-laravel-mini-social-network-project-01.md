@@ -4,7 +4,7 @@ title:  "Laravel 5.3으로 만들어보는 Mini Social Network"
 categories: PHP
 tags: php laravel
 ---
-(Devlov의 강의)[https://goo.gl/ND53L9]를 보고 내용 정리
+[Devlov의 강의](https://goo.gl/ND53L9)를 보고 내용 정리
 
 우선 라라벨 프로젝트를 생성
 # 23. Social Network Custom Registration

@@ -4,7 +4,7 @@ title:  "Laravel 5.3에서 Sentinel 활용 #1"
 categories: PHP
 tags: php laravel sentinel
 ---
-Sentinel 은 auth 관련 패키지이다. 이것을 Laravel 5.3에서 사용하는 방법을 정리해본다.
+'Sentinel' 은 'auth' 관련 패키지이다. 이것을 Laravel 5.3에서 사용하는 방법을 정리해본다.
 
 # 2. Setting Up
 Sentinel By Cartalyst 검색
