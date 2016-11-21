@@ -4,9 +4,11 @@ title:  "Laravel 5.3에서 Sentinel 활용 #1"
 categories: PHP
 tags: php laravel sentinel
 ---
-'Sentinel' 은 'auth' 관련 패키지이다. 이것을 Laravel 5.3에서 사용하는 방법을 정리해본다.
+`Sentinel` 은 `auth` 관련 패키지이다. 이것을 Laravel 5.3에서 사용하는 방법을 정리해본다.
 
-# 2. Setting Up
+# #2 Setting Up
+[Laravel 5.3 advanced Authentication #2 Setting up Sentinel](https://www.youtube.com/watch?v=964-xdghBOY&list=PL3ZhWMazGi9KB9PajJHWvV2NJ1ITNoNGp&index=2) 참조
+
 Sentinel By Cartalyst 검색
 
 ## Install by Composer
@@ -15,13 +17,15 @@ composer require cartalyst/sentinel "2.0.*"
 ```
 
 ## Integration
-config/app.php
-$providers
 
+#### config/app.php
 {% highlight php %}
+$providers
+...
 Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,
 
 $aliases
+...
 'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
 'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
 'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
@@ -35,18 +39,21 @@ php artisan vendor:publish --provider="Cartalyst\Sentinel\Laravel\SentinelServic
 이후 config/cartalyst.sentinel.php 와 migration file 추가
 
 ## Migrations
-{% highlight bash %}
+```bash
 php artisan migrate
-{% endhighlight %}
+```
 이 때 default user migration이 있었다면 rollback 후 다시 할 것
 
 # 3. Registration
+[Laravel 5.3 advanced Authentication #3 Registration](https://www.youtube.com/watch?v=xvlA1OSzZ5k&list=PL3ZhWMazGi9KB9PajJHWvV2NJ1ITNoNGp&index=3) 참조
+
 ## Migration 수정
 
-2014_07_02_230147_migration_cartalyst_sentinel.php 에서
+#### 2014_07_02_230147_migration_cartalyst_sentinel.php
 
 {% highlight php %}
-Schema::create('users', function (Blueprint $table) {
+Schema::create('users', function (Blueprint $table)
+{
 ...
     $table->string('first_name')->nullable();
     $table->string('last_name')->nullable();
@@ -64,7 +71,7 @@ php artisan migrate:refresh
 php artisan make:controller RegistrationController
 {% endhighlight %}
 
-routes/web.php 에서
+#### routes/web.php
 {% highlight php %}
 Route::get('/register', 'RegistrationController@register'); // 추가
 {% endhighlight %}
