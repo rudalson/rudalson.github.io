@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "Laravel 5.3에서 Sentinel 활용 #4"
+title:  "Laravel with Sentinel - 08. Roles"
 categories: PHP
 tags: php laravel sentinel
 ---
-# #8 Roles
 [Laravel 5.3 advanced Authentication #8 Roles](https://www.youtube.com/watch?v=1S209IXvWVs) 참조
 
 ## roles 데이터 추가
