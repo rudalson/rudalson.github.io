@@ -8,6 +8,7 @@ tags: php laravel sentinel
 
 ## Visitor 권한
 우선 `VisitorMiddleware`를 만든다.
+
 ```bash
 php artisan make:middleware VisitorsMiddleware
 ```
