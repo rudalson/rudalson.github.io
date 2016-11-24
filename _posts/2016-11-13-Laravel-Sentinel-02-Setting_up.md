@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Laravel with Sentinel - 02. Setting Up"
