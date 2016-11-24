@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Laravel 5.3에서 Sentinel 활용 #3"
+title:  "Laravel with Sentinel - 06. Menu"
 categories: PHP
 tags: php laravel sentinel
 ---
-# #6 Menu
+[Laravel 5.3 advanced Authentication #6 Menu](https://www.youtube.com/watch?v=RaGxwQYoZ5o&index=6&list=PL3ZhWMazGi9KB9PajJHWvV2NJ1ITNoNGp) 참조
 
 ## Layout 구성
 
 Bootstrap에서 Narrow Jumbotron template를 가져와서 `layouts/master.blade.php`에 만든다.
 
-## master.blade.php
-```php
+#### master.blade.php
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,7 +36,7 @@ Bootstrap에서 Narrow Jumbotron template를 가져와서 `layouts/master.blade.
 </html>
 ```
 
-## top.menu.php
+#### top.menu.php
 ```php
 <div class="header clearfix">
   <nav>
@@ -52,7 +52,7 @@ Bootstrap에서 Narrow Jumbotron template를 가져와서 `layouts/master.blade.
 ## login, register blade 수정
 이제 layout을 bootstrap로 잡았으니 이를 적용한다.
 
-### login.blade.php & register.blade.php
+#### login.blade.php & register.blade.php
 2파일 제거할 때 앞부분 `div container`까지 제거한다.
 
 ```php
@@ -65,51 +65,4 @@ Bootstrap에서 Narrow Jumbotron template를 가져와서 `layouts/master.blade.
 ...
     </div>
 @endsection
-```
-
-
-# #7 Logout & show content to logged users only
-
-## logout 구현
-
-### web.php
-```php
-Route::post('/logout', 'LoginController@logout');
-```
-
-### LoginController
-```php
-public function logout()
-{
-    Sentinel::logout();
-    return redirect('/login');
-}
-```
-
-## top.menu.php 수정
-```php
-<div class="header clearfix">
-  <nav>
-    <ul class="nav nav-pills pull-right">
-      @if(Sentinel::check())
-        <li role="presentation">
-          <form action="/logout" method="POST" id="logout-form">
-            {{ csrf_field() }}
-            <a href="#" onclick="document.getElementById('logout-form').submit()">Logout</a>
-          </form>
-        </li>
-      @else
-        <li role="presentation"><a href="/login">Login</a></li>
-        <li role="presentation"><a href="/register">Register</a></li>
-      @endif
-    </ul>
-  </nav>
-  <h3 class="text-muted">
-    @if(Sentinel::check())
-      Hello, {{ Sentinel::getUser()->first_name }}
-    @else
-      Authentication with Sentinel
-    @endif
-  </h3>
-</div>
 ```
