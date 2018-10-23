@@ -26,3 +26,5 @@ gems:
 # highlighter: pygments
 # highlighter: rouge
 # highlighter: false
+
+theme: jekyll-theme-slate
