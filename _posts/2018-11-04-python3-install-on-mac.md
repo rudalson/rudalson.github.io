@@ -59,3 +59,35 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> django.__version__
 '2.1.3'
 ```
+
+장고 프로젝트 생성
+```
+> django-admin startproject django01
+rudalson@C02WR164G8WL:~/work/python-codes:> ll
+total 0
+drwxr-xr-x  3 rudalson  staff   96 11  4 12:16 .
+drwxr-xr-x  8 rudalson  staff  256 11  4 12:15 ..
+drwxr-xr-x  4 rudalson  staff  128 11  4 12:16 django01
+```
+
+```
+> python3 manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 15 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+November 04, 2018 - 03:22:08
+Django version 2.1.3, using settings 'django01.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[04/Nov/2018 03:22:26] "GET / HTTP/1.1" 200 16348
+[04/Nov/2018 03:22:26] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[04/Nov/2018 03:22:27] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[04/Nov/2018 03:22:27] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[04/Nov/2018 03:22:27] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+Not Found: /favicon.ico
+[04/Nov/2018 03:22:27] "GET /favicon.ico HTTP/1.1" 404 1974
+```
