@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "이미지 혹은 동영상 파일에 exiftool을 사용하여 메타정보 수정하기"
