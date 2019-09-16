@@ -74,3 +74,15 @@ exiftool "-alldates<filename" 2015-08-13*
 
 
 ExifTool은 워낙 기능이 많고 지원하는 것 또한 부족함 없다. 개발자가 지속적으로 관리하고 수정사항을 누적시키고 있기 때문에 독보적인 위치에 있지 않을 까 싶다. 감사히 잘 쓰겠습니다.
+
+## 파일명 변경
+파일명을 촬영시각순으로 원하는 포맷대로 변경하려면
+```
+exiftool  "-FileName<$EXIF:DateTimeOriginal" -d "%Y-%m-%d %H.%M.%S%%-c.%%le" .
+```
+
+동영상 파일은 EXIF가 아니기 때문에 아래처럼 생성시간 기준으로 해주면 될 것 같다
+```
+exiftool  --ext jpg "-FileName<CreateDate" -d "%Y-%m-%d %H.%M.%S%%-c.%%le" .
+```
+--ext는 exclusive, -ext는 inclusive 속성이다.
