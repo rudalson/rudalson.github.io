@@ -50,7 +50,7 @@ ERC20.sol 에서 현재 소스의 solidity 버전을 확인할 수 있다. 그�
     }
     ```
 
-5. 최종 나온 코드의 파일들은 아래와 같다.
+1. 최종 나온 코드의 파일들은 아래와 같다.
     * ERC20Burnable.sol
     * IERC20.sol
     * ERC20Detailed.sol
@@ -59,17 +59,20 @@ ERC20.sol 에서 현재 소스의 solidity 버전을 확인할 수 있다. 그�
     * SimpleToken.sol
     * ERC20.sol
 
-6. REMIX IDE의 `Compile`탭에서 `compiler version` 을 `0.5.0` 으로 맞춰준 후 compile를 해준다.
+1. REMIX IDE의 `Compile`탭에서 `compiler version` 을 `0.5.0` 으로 맞춰준 후 compile를 해준다.
 ![Remix compiler tab]({{ site.url }}/assets/2019/2019-10-22.remix-compile-tab.png)
 
-7. `Run`탭에서 `Environment`를 `JavaScriptVM`으로 맞추고 `SimpleToken`을 `Deploy`한다. 그러면 아래에 Deployed 된 기능들이 생겨남을 알 수 있으며 이를 테스트 할 수 있다. JavaScriptVM에서 deploy 한다는 것은 이더리움에 아직 올린것이 아니라 local 에서 vm을 구성하여 만든 것이고 이를 통해 기능 테스트를 미리 해볼 수 있다.
+1. `Run`탭에서 `Environment`를 `JavaScriptVM`으로 맞추고 `SimpleToken`을 `Deploy`한다. 그러면 아래에 Deployed 된 기능들이 생겨남을 알 수 있으며 이를 테스트 할 수 있다. JavaScriptVM에서 deploy 한다는 것은 이더리움에 아직 올린것이 아니라 local 에서 vm을 구성하여 만든 것이고 이를 통해 기능 테스트를 미리 해볼 수 있다.
 ![Remix run tab]({{ site.url }}/assets/2019/2019-10-22.remix-run-tab.png)
 
-8. 테스트에 문제가 없다면 실제 이더리움넷에 deploy 하면 된다. Environment를 `Injected Web3 Robsten`(테스트넷)으로 해서 Deploy한다. 실제 토큰을 생성하기 위해서는 전체 수량을 가질 최초의 지갑을 자신이 접근가능한 주소로 한다.
+81. 테스트에 문제가 없다면 실제 이더리움넷에 deploy 하면 된다. Environment를 `Injected Web3 Robsten`(테스트넷)으로 해서 Deploy한다. 실제 토큰을 생성하기 위해서는 전체 수량을 가질 최초의 지갑을 자신이 접근가능한 주소로 한다.
 ![Web3 deploy]({{ site.url }}/assets/2019/2019-10-22.web-deploy.png)
 여기서 주의사항으로는 토큰생성에 대한 contract 수행도 `Ether Gas fee` 가 발생하기 때문에 테스트넷용 이더넷을 확보한 뒤 contract deploy를 한다. deploy가 성공하면 아래와 같이 `etherscan`에서 확인 가능하다.(테스트넷은 간헐적으로 reset 되므로 일정시간이 지나면 사라질 수도 있다)
 ![Etherscan contract]({{ site.url }}/assets/2019/2019-10-22.contract-etherscan.png)
 
-9. 이후 wallet에서 확인해 보면 토큰을 확인 할 수 있다.
+1. 이후 wallet에서 확인해 보면 토큰을 확인 할 수 있다.
 ![Created Token]({{ site.url }}/assets/2019/2019-10-22.token-in-wallet.png)
 
+
+# Refernece
+* [2018, 이더리움 ERC20 토큰 만드는 방법](https://youtu.be/nu8a7frh4Xs)
