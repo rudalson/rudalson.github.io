@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "파이썬으로 exif 정보 다루기"
-categories: etc
+categories: python
 tags: GPS geotagging PIL exifread exif
 ---
 exif 정보를 구해오는 3가지 방법
