@@ -16,38 +16,39 @@ Solidity를 위한 IDE는 [Remix IDE](http://remix.ethereum.org)를 사용한다
 1. [openzeppelin-contracts github](https://github.com/OpenZeppelin/openzeppelin-contracts)에서 [contracts/token/ERC20](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20) 디렉토리로 간다.
 ![OpenZeppelin]({{ site.url }}/assets/2019/2019-10-22.openzepplin-contracts-erc20.png)
 
-2. `ERC20.sol`, `ERC20Burnable.sol`, `ERC20Detailed.sol`, `IERC20.sol`, `SafeERC20.sol` 을 가져다 IDE에 등록시킨다.
+1. `ERC20.sol`, `ERC20Burnable.sol`, `ERC20Detailed.sol`, `IERC20.sol`, `SafeERC20.sol` 을 가져다 IDE에 등록시킨다.
 ERC20.sol 에서 현재 소스의 solidity 버전을 확인할 수 있다. 그리고 import 파일중에서 다른 디렉토리에 있는 파일들도 모두 찾아서 구해준다. 아래의 경우 `Context.sol`과 `SafeMath.sol`도 각각의 디렉토리로 들어 가서 모두 구해온다. 
-```
-pragma solidity ^0.5.0;
+    ```
+    pragma solidity ^0.5.0;
 
-import "../../GSN/Context.sol";
-import "./IERC20.sol";
-import "../../math/SafeMath.sol";
-```
-3. 이렇게 모든 파일들을 구해서 Remix IDE에 생성한 후 import의 디렉토리도 모두 `“./”` 으로 변경한다. 가령 위의 ERC20.sol은 아래처럼 될 것이다.
-```
-import "./Context.sol";
-import "./IERC20.sol";
-import "./SafeMath.sol";
-```
+    import "../../GSN/Context.sol";
+    import "./IERC20.sol";
+    import "../../math/SafeMath.sol";
+    ```
 
-4. [contracts/examples](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/examples) 디렉토리로 가서 `SimpleToken.sol` 을 구해와서 몇가지를 수정해 준다. import 디렉토리도 모두 “./” 으로 변경한다. 코드상에서 `Context`와 `ERC20Burnable`을 추가시켜준다. 그리고 토큰명과 토큰의 단위가 될 축약어를 지정해준다. 아래 예제에서는 `BusToken`과 `BTK`로 해주었다. 그러면 아래와 같은 코드가 될 것이다. 참고로, ERC20Burnable에는 토큰의 소각기능이 포함되어 있다. 이런 것들이 필요한 경우 몇몇가지를 상속의 형태로 가져오면 된다.
-```
-pragma solidity ^0.5.0;
+1. 이렇게 모든 파일들을 구해서 Remix IDE에 생성한 후 import의 디렉토리도 모두 `“./”` 으로 변경한다. 가령 위의 ERC20.sol은 아래처럼 될 것이다.
+    ```
+    import "./Context.sol";
+    import "./IERC20.sol";
+    import "./SafeMath.sol";
+    ```
 
-import "./Context.sol";
-import "./ERC20.sol";
-import "./ERC20Detailed.sol";
-import "./ERC20Burnable.sol";
+1. [contracts/examples](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/examples) 디렉토리로 가서 `SimpleToken.sol` 을 구해와서 몇가지를 수정해 준다. import 디렉토리도 모두 “./” 으로 변경한다. 코드상에서 `Context`와 `ERC20Burnable`을 추가시켜준다. 그리고 토큰명과 토큰의 단위가 될 축약어를 지정해준다. 아래 예제에서는 `BusToken`과 `BTK`로 해주었다. 그러면 아래와 같은 코드가 될 것이다. 참고로, ERC20Burnable에는 토큰의 소각기능이 포함되어 있다. 이런 것들이 필요한 경우 몇몇가지를 상속의 형태로 가져오면 된다.
+    ```
+    pragma solidity ^0.5.0;
 
-contract SimpleToken is Context, ERC20, ERC20Detailed, ERC20Burnable {
-    
-    constructor () public ERC20Detailed("BusToken", "BTK", 18) {
-        _mint(_msgSender(), 10000 * (10 ** uint256(decimals())));
+    import "./Context.sol";
+    import "./ERC20.sol";
+    import "./ERC20Detailed.sol";
+    import "./ERC20Burnable.sol";
+
+    contract SimpleToken is Context, ERC20, ERC20Detailed, ERC20Burnable {
+        
+        constructor () public ERC20Detailed("BusToken", "BTK", 18) {
+            _mint(_msgSender(), 10000 * (10 ** uint256(decimals())));
+        }
     }
-}
-```
+    ```
 
 5. 최종 나온 코드의 파일들은 아래와 같다.
     * ERC20Burnable.sol
