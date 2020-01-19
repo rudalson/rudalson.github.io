@@ -45,19 +45,19 @@ vue-router가 SPA에서 다른 경로의 `component`를 가르키는 기본 형�
 이런 형태로 직접 component에 명시된 /about 경로를 바로 가르킬 수 있다.
 
 ```js
-<v-list-item link @click="$router.push({name: 'about'})">
+<v-list-item link @click="$router.push({name: 'about', params: { userId: 123 }})">
 ```
 name이 about인 component를 찾아서 경로로 가르킬 수 있다. 이렇게 사용할 경우는 뒤에 parameter를 추가로 넣어 줄 수 있는 장점 뿐만 아니라 조금 더 명시적으로 가르켜 사용하도록 해준다.
 
 
-### 2. key-value 값으로 component 찾아가기
+### 2. router-link or router
 또 다른 방법으로는 아래와 같은 문법도 있다.
 *vue* file
 ```vue
-router :to="{name: 'home'}"
+router :to="{name: 'about'}"
 ```
 
 혹은 `router-link` 를 사용할 수 있다.
-```
-<router-link :to="{name: 'home'}">
+```html
+<router-link :to="{name: 'about'}">
 ```
