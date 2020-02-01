@@ -28,7 +28,36 @@ WARNING: git-filter-branch has a glut of gotchas generating mangled history
          filter-branch manual page for more details; to squelch this warning,
          set FILTER_BRANCH_SQUELCH_WARNING=1.
 Proceeding with filter-branch...
-Rewrite dc1f1ce75d65ddca1a00dfc7936a9c6c6f8635ba (1/30) (0 seconds passed, remaiRewrite b84f79c97d4cfe5eaea489780905004fb975e570 (2/30) (101 seconds passed, remRewrite 36b524992fe444bcb9ae4e4371863cebbf00cea1 (3/30) (202 seconds passed, remRewrite 702be0956a8272dace9375b87c6fbe282c215dec (4/30) (302 seconds passed, remRewrite eb92a21aaae71c085625215208b10ab64da3a6eb (5/30) (303 seconds passed, remRewrite e24bb84769fa4e1ee35fe1136100a7f25fc7bd75 (6/30) (303 seconds passed, remRewrite eb01c02df740889faaa8dd93ae43211c0c75082b (7/30) (304 seconds passed, remRewrite ccbceef34a24022d1d984b1c4551685d1bb90598 (8/30) (305 seconds passed, remRewrite 53ebb33ed4ff2d5d38b2f017777d6b663fa5949b (9/30) (305 seconds passed, remRewrite 48b0a8c08435df990201045c73143fc582edd6c6 (10/30) (306 seconds passed, reRewrite 7569ca66c979f65b30645889f8629db0cca4a132 (11/30) (307 seconds passed, reRewrite 2d9d01cced5bac42d89dd38a9d495eddea40dfe5 (12/30) (307 seconds passed, reRewrite 44ed319c656a7dedffe17093fdd3af2213770896 (13/30) (308 seconds passed, reRewrite 34e23214bd16229451b17bb5dd543fc57a7b57fa (14/30) (309 seconds passed, reRewrite c0a8cb173eaee7b568e994165996fee637f500b5 (15/30) (309 seconds passed, reRewrite 31d0a691867aca4ce1abce41b5a14f31c0486c7c (16/30) (310 seconds passed, reRewrite 27eb484ade2efb8685e953fc467cf65905998739 (17/30) (311 seconds passed, reRewrite 4ea7a431b4aa1cb05ac88f622f3d73b8f5b8f0c2 (18/30) (311 seconds passed, reRewrite ff791ac6fa92ed42f6bb9d83857354d7c180c115 (19/30) (312 seconds passed, reRewrite 1e3678175318dec256895fd837e63fc3f672c153 (20/30) (312 seconds passed, reRewrite 7d26651ba9c832e61d937ff292aab85c713eabcb (21/30) (313 seconds passed, reRewrite dc8391645f3f1929846c833a6d6b2be1e4e723d9 (22/30) (314 seconds passed, reRewrite 507a61a33a4d1a9420d0131bc0d45ac02ebe64c9 (23/30) (316 seconds passed, reRewrite d8585851b034af7f39bc2f1791a568d38e0f868d (24/30) (318 seconds passed, reRewrite 09cfdece594fbd29ceaed00e21abc28c44ca9b01 (25/30) (319 seconds passed, reRewrite f9a6fad83a5fd00b0c74e5f9f1481ddd528d0e6b (26/30) (319 seconds passed, reRewrite 7c697b2618f8c27b4f5a5f3dc3ec6889b1edb17c (27/30) (320 seconds passed, reRewrite 70b4c133f202922581fa72639f3b3a78d7708297 (28/30) (321 seconds passed, reRewrite 80d4c415680bf3428a4cb98892bef237edea1006 (29/30) (321 seconds passed, reRewrite 35d1ea7be6d7807b9994c8971ef03bf433bf3187 (30/30) (322 seconds passed, remaining 0 predicted)
+Rewrite dc1f1ce75d65ddca1a00dfc7936a9c6c6f8635ba (1/30) (0 seconds passed, remaiRewrite 
+b84f79c97d4cfe5eaea489780905004fb975e570 (2/30) (101 seconds passed, remRewrite 
+36b524992fe444bcb9ae4e4371863cebbf00cea1 (3/30) (202 seconds passed, remRewrite 
+702be0956a8272dace9375b87c6fbe282c215dec (4/30) (302 seconds passed, remRewrite 
+eb92a21aaae71c085625215208b10ab64da3a6eb (5/30) (303 seconds passed, remRewrite 
+e24bb84769fa4e1ee35fe1136100a7f25fc7bd75 (6/30) (303 seconds passed, remRewrite 
+eb01c02df740889faaa8dd93ae43211c0c75082b (7/30) (304 seconds passed, remRewrite 
+ccbceef34a24022d1d984b1c4551685d1bb90598 (8/30) (305 seconds passed, remRewrite 
+53ebb33ed4ff2d5d38b2f017777d6b663fa5949b (9/30) (305 seconds passed, remRewrite 
+48b0a8c08435df990201045c73143fc582edd6c6 (10/30) (306 seconds passed, reRewrite 
+7569ca66c979f65b30645889f8629db0cca4a132 (11/30) (307 seconds passed, reRewrite 
+2d9d01cced5bac42d89dd38a9d495eddea40dfe5 (12/30) (307 seconds passed, reRewrite 
+44ed319c656a7dedffe17093fdd3af2213770896 (13/30) (308 seconds passed, reRewrite 
+34e23214bd16229451b17bb5dd543fc57a7b57fa (14/30) (309 seconds passed, reRewrite 
+c0a8cb173eaee7b568e994165996fee637f500b5 (15/30) (309 seconds passed, reRewrite 
+31d0a691867aca4ce1abce41b5a14f31c0486c7c (16/30) (310 seconds passed, reRewrite 
+27eb484ade2efb8685e953fc467cf65905998739 (17/30) (311 seconds passed, reRewrite 
+4ea7a431b4aa1cb05ac88f622f3d73b8f5b8f0c2 (18/30) (311 seconds passed, reRewrite 
+ff791ac6fa92ed42f6bb9d83857354d7c180c115 (19/30) (312 seconds passed, reRewrite 
+1e3678175318dec256895fd837e63fc3f672c153 (20/30) (312 seconds passed, reRewrite 
+7d26651ba9c832e61d937ff292aab85c713eabcb (21/30) (313 seconds passed, reRewrite 
+dc8391645f3f1929846c833a6d6b2be1e4e723d9 (22/30) (314 seconds passed, reRewrite 
+507a61a33a4d1a9420d0131bc0d45ac02ebe64c9 (23/30) (316 seconds passed, reRewrite 
+d8585851b034af7f39bc2f1791a568d38e0f868d (24/30) (318 seconds passed, reRewrite 
+09cfdece594fbd29ceaed00e21abc28c44ca9b01 (25/30) (319 seconds passed, reRewrite 
+f9a6fad83a5fd00b0c74e5f9f1481ddd528d0e6b (26/30) (319 seconds passed, reRewrite 
+7c697b2618f8c27b4f5a5f3dc3ec6889b1edb17c (27/30) (320 seconds passed, reRewrite 
+70b4c133f202922581fa72639f3b3a78d7708297 (28/30) (321 seconds passed, reRewrite 
+80d4c415680bf3428a4cb98892bef237edea1006 (29/30) (321 seconds passed, reRewrite 
+35d1ea7be6d7807b9994c8971ef03bf433bf3187 (30/30) (322 seconds passed, remaining 0 predicted)
 Ref 'refs/heads/master' was rewritten
 ```
 그리고 `push` 해주자.
@@ -45,9 +74,9 @@ Writing objects: 100% (663/663), 317.17 MiB | 5.70 MiB/s, done.
 Total 663 (delta 194), reused 628 (delta 192)
 remote: Resolving deltas: 100% (194/194), done.
 remote: GitLab: You are not allowed to force push code to a protected branch on this project.
-To https://프로젝트 경로.git
+To https://다른 팀의 어떤 프로젝트 경로.git
  ! [remote rejected]   master -> master (pre-receive hook declined)
-error: failed to push some refs to 'https://프로젝트 경로.git'
+error: failed to push some refs to 'https://다른 팀의 어떤 프로젝트 경로.git'
 ```
 
 이것을 처음 올렸을 때는 위와 같은 에러가 발생하였는데 이것은 gitlab내 master 브랜치 설정을 변경하면 해결이 가능하다.
