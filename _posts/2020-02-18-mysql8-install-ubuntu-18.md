@@ -34,7 +34,7 @@ $ sudo apt-get install mysql-server
 ## Expired Key (EXPKEYSIG) with APT 문제 발생
 일부 ubuntu 머신에서 아래와 같은 문제가 발생하는 경우가 있다.
 
-```shell script
+```
 $ sudo apt-get update
 Hit:1 http://ap-northeast-2.ec2.archive.ubuntu.com/ubuntu bionic InRelease
 Hit:2 http://ap-northeast-2.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease
@@ -52,7 +52,7 @@ N: See apt-secure(8) manpage for repository creation and user configuration deta
 
 gpg signature key가 expire 되었다는 내용인데 해결책은 아래와 같다.
 
-```shell script
+```
 $ sudo apt-key adv --keyserver keys.gnupg.net --recv-keys 8C718D3B5072E1F5
 Executing: /tmp/apt-key-gpghome.QD2aYIUvET/gpg.1.sh --keyserver keys.gnupg.net --recv-keys 8C718D3B5072E1F5
 gpg: key 8C718D3B5072E1F5: 3 duplicate signatures removed
@@ -73,3 +73,8 @@ $ sudo apt-get install mysql-server
 $ mysql --version
 mysql  Ver 8.0.19 for Linux on x86_64 (MySQL Community Server - GPL)
 ```
+
+### Reference
+* [How To Install MySQL 8.0 On Ubuntu 18.04](https://phoenixnap.com/kb/how-to-install-mysql-on-ubuntu-18-04)
+* [A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/)
+* [How to Solve an Expired Key (EXPKEYSIG) with Apt](https://tecadmin.net/expired-key-expkeysig-with-apt/)
